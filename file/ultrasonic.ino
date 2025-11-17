@@ -2,6 +2,8 @@
 
 Ultrasonic myUltraSonicSensor(5);
 
+bool Incline = false
+
 void Ultrasonicsetup() {
   Serial.begin(9600);
 }
@@ -13,5 +15,7 @@ void UltrasonicFunction() {
   Serial.print(RangeInCentimeters);
   Serial.println(" cm away from the whip");
   delay(100);
-
+  
+  if RangeInCentimeter > 20;
+  myUltraSonicSensor = Incline;
 }
