@@ -2,6 +2,10 @@
 
 Grove_LED_Bar bar(9,8, 0);
 
+unsigned long previousMillis = 0;
+const long interval = 1000;
+
+
 
 void lightbarSetup() {
   bar.begin();
@@ -9,9 +13,15 @@ void lightbarSetup() {
 
 void lightbarFunction() {
 
-  for (int i=0; i<=10; i++) {
+  unsigned long currentMillis = millis();
 
-    bar.setLevel(i);
-    delay(100);
+  if (currentMillis - previousMillis >= interval) {
+    previousMillis = currentMillis;
+
+    for (int i=0; i<=10; i++) {
+
+      bar.setLevel(i);
+      delay(100);
+    }
   }
 }
