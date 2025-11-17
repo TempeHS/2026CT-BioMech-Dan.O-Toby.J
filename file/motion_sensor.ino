@@ -1,0 +1,8 @@
+void motionsensorSetup() {
+
+}
+
+void motionsensorFunction() {
+
+  
+}
