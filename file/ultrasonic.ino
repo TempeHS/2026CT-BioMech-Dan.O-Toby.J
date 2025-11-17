@@ -9,7 +9,7 @@ void Ultrasonicsetup() {
 
 void UltrasonicFunction() {
   unsigned long RangeInCentimeters;
-  RangeInCentimeters = myUltraSonicSensor.distanceRead();
+  RangeInCentimeters = myUltraSonicSensor.MeasureInCm();
   Serial.print(RangeInCentimeters);
   Serial.println(" cm");
   delay(250);
