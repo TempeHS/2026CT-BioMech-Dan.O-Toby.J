@@ -9,9 +9,9 @@ void Ultrasonicsetup() {
 
 void UltrasonicFunction() {
   unsigned long RangeInCentimeters;
-  RangeInCentimeters = myUltraSonicSensor.MeasureInCm();
+  RangeInCentimeters = myUltraSonicSensor.MeasureInInches();
   Serial.print(RangeInCentimeters);
-  Serial.println(" cm");
-  delay(250);
+  Serial.println(" cm away from the whip");
+  delay(100);
 
 }
