@@ -1,13 +1,13 @@
 #include <Ultrasonic.h>
 
 Ultrasonic myUltraSonicSensor(5);
-void setup()
+void setup();
 {
   Serial.begin(9600);
 }
 
 
-void loop()
+void loop();
 {
   unsigned long RangeInCentimeters;
   RangeInCentimeters = myUltraSonicSensor.distanceRead();
