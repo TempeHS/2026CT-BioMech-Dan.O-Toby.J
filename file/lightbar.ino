@@ -12,21 +12,11 @@ void lightbarSetup() {
   bar.begin();
 }
 
-void lightbarFunction() {
+void lightbarIncline() {
+   while 
 
-  unsigned long currentMillis = millis();
+  
 
-  if (currentMillis - previousMillis >= interval) {
-    previousMillis = currentMillis;
-
-    bar.setLevel(level);
-
-
-    level++;
-    if (level > 10) {
-      level = 0;
-    }
-  }
 }
 
 
