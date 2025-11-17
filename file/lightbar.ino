@@ -2,9 +2,7 @@
 
 Grove_LED_Bar bar(9,8, 0);
 
-void setup() {
-  bar.begin();
-}
+
 void lightbarSetup() {
   bar.begin();
 }
