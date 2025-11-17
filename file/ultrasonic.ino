@@ -1,5 +1,4 @@
-#include "Ultrasonic.h"
-
+#include <Ultrasonic.h>
 
 Ultrasonic myUltraSonicSensor(5);
 void setup()
