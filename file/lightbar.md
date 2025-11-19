@@ -9,6 +9,8 @@ Grove LED Bar Documentation:
 
 https://wiki.seeedstudio.com/Grove-LED_Bar/ 
 
+'''bar.setLevel(1-9)
+
 
 
 
