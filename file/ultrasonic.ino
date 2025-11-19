@@ -3,7 +3,7 @@
 Ultrasonic myUltraSonicSensor(5);
 
 bool Incline = false
-
+int 
 void Ultrasonicsetup() {
   Serial.begin(9600);
 }
@@ -18,4 +18,6 @@ void UltrasonicFunction() {
   
   if RangeInCentimeter > 20;
   myUltraSonicSensor = Incline;
+  if RangeInCentimeter > 20;
+  Incline = true;
 }
