@@ -1,11 +1,9 @@
 void setup() {
-  lightbarSetup();
-  motionsensorSetup();
-  Ultrasonicsetup();
+  bar.begin();
+  Serial.begin(9600);
 }
 
 void loop(){
-  lightbarFunction();
-  motionsensorFunction();
   UltrasonicFunction();
+  lightbarIncline();
 }

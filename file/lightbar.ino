@@ -7,19 +7,13 @@ const long interval = 100;
 int level = 0;
 
 
-
-void lightbarSetup() {
-  bar.begin();
-}
-
 void lightbarIncline() {
-   while Inline == true {
+   while Incline == true {
 
-    SetLevel
+    bar.setLed(8, 1);
+    bar.setLed(9, 1);
+    bar.setLed(10, 1);
    }
-
-  
-
 }
 
 
