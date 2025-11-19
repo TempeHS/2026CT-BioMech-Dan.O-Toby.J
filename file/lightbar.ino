@@ -13,7 +13,10 @@ void lightbarSetup() {
 }
 
 void lightbarIncline() {
-   while 
+   while Inline == true {
+
+    SetLevel
+   }
 
   
 
