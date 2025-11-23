@@ -2,8 +2,11 @@
 
 Ultrasonic myUltraSonicSensor(5);
 
-bool Incline = false
+bool Incline = false;
 
+void UltrasonicSetup() {
+  Serial.begin(9600);
+}
 
 void UltrasonicFunction() {
   unsigned long RangeInCentimeters;
