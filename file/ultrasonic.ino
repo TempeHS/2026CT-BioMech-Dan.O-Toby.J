@@ -2,7 +2,7 @@
 
 Ultrasonic myUltraSonicSensor(5);
 
-bool Incline = false;
+extern bool Incline = false;
 
 void UltrasonicSetup() {
   Serial.begin(9600);
