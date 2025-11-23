@@ -14,7 +14,7 @@ void lightbarSetup(){
 
 
 void lightbarIncline() {
-   while Incline == true {
+   while (Incline == true) {
 
     bar.setLed(8, 1);
     bar.setLed(9, 1);
