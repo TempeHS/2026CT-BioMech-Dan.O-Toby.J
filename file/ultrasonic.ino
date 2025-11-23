@@ -4,6 +4,8 @@ Ultrasonic myUltraSonicSensor(5);
 
 bool Incline = false;
 
+unsigned long previousMillis2 = 
+
 void UltrasonicSetup() {
   Serial.begin(9600);
 }
@@ -16,9 +18,9 @@ void UltrasonicFunction() {
   delay(100);
   
   
-  if (RangeInCentimeters > 20) {
-    Incline = true;
-  } else {
-    Incline = false;
-  }
+  int distance1 = myUltraSonicSensor.MeasureInCentimeters();
+  delay(500);
+
+   int distance2 = myUltraSonicSensor.MeasureInCentimeters();
+  delay(500); 
 }
