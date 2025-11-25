@@ -21,7 +21,10 @@ void lightbarIncline() {
     bar.setLed(8, 1);
     bar.setLed(9, 1);
     bar.setLed(10, 1);
-    delay(200); 
+    delay(300); 
+    bar.setLed(8, 0);
+    bar.setLed(9, 0);
+    bar.setLed(10, 0);
    }
 
    Incline = false;
