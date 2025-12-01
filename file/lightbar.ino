@@ -9,6 +9,7 @@ extern bool Incline;
 void lightbarSetup() {
 
   bar.begin();
+  bar.setLevel(0);
 }
 
 
