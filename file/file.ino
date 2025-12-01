@@ -2,6 +2,8 @@
 
 void setup() {
   lightbarSetup();
+UltrasonicSetup();
+
   
   
 }
@@ -9,4 +11,6 @@ void setup() {
 void loop(){
   
   lightbarIncline();
+  UltrasonicFunction();
+  
 }
