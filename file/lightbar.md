@@ -1,3 +1,6 @@
+FIX THE LIGHTBAR FASHING millis() thing IT DOESNT DO ANYTHING
+
+
 Libraries used: 
 
 Grove LED Bar by Seeed Studio
