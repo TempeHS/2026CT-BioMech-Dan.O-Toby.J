@@ -61,3 +61,5 @@ void UltrasonicFunction() {
 ,,,
  We have learnt that the Serial begin needs to be moved to file.ino with this file just calling the light bar and ultrasonic functions 
  This code measures the distance then prints it then after a delay is compared the differnce with the pervoiuse distance read
+ then prnce it as 
+ "First measurement"
