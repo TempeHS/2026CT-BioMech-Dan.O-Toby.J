@@ -13,11 +13,11 @@ void UltrasonicFunction() {
   Serial.print(RangeInCentimeters);
   Serial.println(" cm away from the whip");
   delay(100);
-  
-  
+
+
   int distance1 = myUltraSonicSensor.MeasureInCentimeters();
   delay(500);
 
   int distance2 = myUltraSonicSensor.MeasureInCentimeters();
-  delay(500); 
+  delay(500);
 }
