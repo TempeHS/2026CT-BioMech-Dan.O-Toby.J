@@ -24,6 +24,40 @@ void UltrasonicFunction() {
 
 }
 ,,,
+This code has been changed with the ultrasonic setup having added 2 delays with one that forced a stop on the code and one that allows a break for the distance distance calculation 
+,,,
 
-This code provides the function of the distance part of the lieght bar sensding the distance for the lightbar to react to
- 
+void UltrasonicFunction() {
+  unsigned long currentMillis = millis();  // Get current time
+  unsigned long RangeInCentimeters;
+  const long interval = 500;
+  RangeInCentimeters = myUltraSonicSensor.MeasureInCentimeters();
+
+  int distance1 = myUltraSonicSensor.MeasureInCentimeters();
+  delay(500);
+  Serial.println("First measurement:");
+  Serial.println(distance1);
+
+
+
+  if (currentMillis - previousMillis2 >= interval) {
+    previousMillis2 = currentMillis;
+
+    int distance2 = myUltraSonicSensor.MeasureInCentimeters();
+    delay(500);
+    Serial.println("Second measurement:");
+    Serial.println(distance2);
+
+    int distance = distance2 - distance1;
+
+    if (distance2 - distance1 > 20) {
+      Incline = true;
+    }
+
+    Serial.println("Difference:");
+    Serial.println(distance);
+  }
+}
+,,,
+ We have learnt that the Serial begin needs to be moved to file.ino with this file just calling the light bar and ultrasonic functions 
+ This code measures the distance then prints it then after a delay is compared the differnce with the pervoiuse distance read
