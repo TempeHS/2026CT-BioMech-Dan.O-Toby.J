@@ -2,7 +2,7 @@
 
 void setup() {
   lightbarSetup();
-UltrasonicSetup();
+  Serial.begin(9600);
 
   
   
@@ -11,6 +11,6 @@ UltrasonicSetup();
 void loop(){
   
   lightbarIncline();
-  UltrasonicFunction();
-  
+
+
 }
