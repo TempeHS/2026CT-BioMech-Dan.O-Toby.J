@@ -6,9 +6,6 @@ bool Incline = false;
 
 unsigned long previousMillis2 = 0;
 
-void UltrasonicSetup() {
-  Serial.begin(9600);
-}
 
 void UltrasonicFunction() {
   unsigned long RangeInCentimeters;
