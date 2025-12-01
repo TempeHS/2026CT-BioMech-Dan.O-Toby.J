@@ -17,7 +17,13 @@ void UltrasonicFunction() {
 
   int distance1 = myUltraSonicSensor.MeasureInCentimeters();
   delay(500);
+  Serial.print(distance1);
 
   int distance2 = myUltraSonicSensor.MeasureInCentimeters();
   delay(500);
+  Serial.print(distance2);
+
+  if (distance2 - distance1 > 20) {
+  Incline = true;
+  }
 }
