@@ -4,7 +4,7 @@ Ultrasonic myUltraSonicSensor(5);
 
 bool Incline = false;
 
-unsigned long previousMillis2 = 
+unsigned long previousMillis2 = 0;
 
 void UltrasonicSetup() {
   Serial.begin(9600);
