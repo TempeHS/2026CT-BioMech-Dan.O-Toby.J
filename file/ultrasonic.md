@@ -59,7 +59,23 @@ void UltrasonicFunction() {
   }
 }
 ,,,
+
+This code block works with the light bar and when the ultrasonic sensor measures a distance bigger than 20.
+it causes a interger called incline to equal true, this then goes to the light bar and activates the function.
+The code does not dynamicaly measure the distance that then casues the light bar to change levels 
+this is not what happends and to do this we will need to increase development.  
+
  We have learnt that the Serial begin needs to be moved to file.ino with this file just calling the light bar and ultrasonic functions 
- This code measures the distance then prints it then after a delay is compared the differnce with the pervoiuse distance read
- then prnce it as 
- "First measurement"
+ This code measures the distance then prints it then after a delay is comparing the differnce with the pervoiuse distance to read
+ then prints it as a measurement 
+
+The Serial moniter display:  
+    "First measurement"
+      25
+      "Second measuremet"
+      25
+      Differnce:
+      0
+
+
+We have the basic strucutre and can now work on dynamiclay moving the light bar caused by the ultrasonic sensor
